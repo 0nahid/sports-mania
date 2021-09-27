@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Leagues from "./../Leagues/Leagues";
 
 const Home = () => {
@@ -11,14 +11,19 @@ const Home = () => {
     );
   }, []);
   return (
-    <Row>
-      <div style={{height:'150px', textAlign:'center' }} className="text-center text-white ">
-        <h1>Sports Mania</h1>
-      </div>
-      {leagues.map((league) => (
-        <Leagues league={league} key={league.idLeague} />
-      ))}
-    </Row>
+    <Container>
+      <Row className="justify-content-center">
+        <div
+          style={{ height: "150px", textAlign: "center" }}
+          className="text-center text-white "
+        >
+          <h1>Sports Mania</h1>
+        </div>
+        {leagues.map((league) => (
+          <Leagues league={league} key={league.idLeague} />
+        ))}
+      </Row>
+    </Container>
   );
 };
 

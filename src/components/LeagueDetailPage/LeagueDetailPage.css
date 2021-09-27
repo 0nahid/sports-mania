@@ -1,6 +1,7 @@
-body{
-    background: white !important;
-    color: black !important;
+.league-detail{
+    background: white !important ;
+    color: black ;
+    padding:2%;
 }
 .league-banner{
     content: "";

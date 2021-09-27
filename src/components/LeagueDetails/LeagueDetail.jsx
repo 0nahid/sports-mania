@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
 import { useParams } from "react-router";
 import LeagueDetailPage from "../LeagueDetailPage/LeagueDetailPage";
 const LeagueDetail = () => {
@@ -11,9 +12,11 @@ const LeagueDetail = () => {
     ).then((data) => setLeagueDetails(data.data.leagues));
   }, [LeagueId]);
   return (
-    <div>
-      {leagueDetails.map(leagues => <LeagueDetailPage leagues={leagues} key={leagues.strWebsite} /> )}
-    </div>
+    <Container>
+      {leagueDetails.map((leagues) => (
+        <LeagueDetailPage leagues={leagues} key={leagues.strWebsite} />
+      ))}
+    </Container>
   );
 };
 

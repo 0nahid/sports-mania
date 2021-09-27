@@ -27,7 +27,7 @@ const Leagues = (props) => {
       <Link to={`/lookupLeague/` + idLeague}>
         <Button variant="primary">
           Explore <BsArrowRight />
-        </Button>{" "}
+        </Button>
       </Link>
     </Col>
   );

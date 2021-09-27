@@ -1,19 +1,16 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './components/Home/Home';
-import { Container } from 'react-bootstrap';
-import Header from './components/Header/Header';
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+  BrowserRouter as Router, Route, Switch
 } from "react-router-dom";
+import './App.css';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 import LeagueDetail from './components/LeagueDetails/LeagueDetail';
 
 function App() {
   return (
-    <Container>
+    <>
       <Header />
       <Router>
         <Switch>
@@ -28,7 +25,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    </Container>
+    </>
   );
 }
 
