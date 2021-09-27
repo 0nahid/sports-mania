@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import { Container, Navbar } from "react-bootstrap";
 
 function Header() {
-    return (
-        <div className="text-white">
-           <h1> This is the header</h1>
-        </div>
-    )
+  return (
+    <Navbar>
+      <Container>
+        <Navbar.Brand href="/">Sports Mania</Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            Signed in as: <a href="#login">Nahid</a>
+          </Navbar.Text>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
-export default Header
+export default Header;

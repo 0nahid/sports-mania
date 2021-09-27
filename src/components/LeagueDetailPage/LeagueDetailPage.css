@@ -1,0 +1,16 @@
+body{
+    background: white !important;
+    color: black !important;
+}
+.league-banner{
+    content: "";
+    background-image: url(../../Photo/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75%;
+    margin: auto;
+}
+.league-banner img{
+    opacity:0.5;
+}
