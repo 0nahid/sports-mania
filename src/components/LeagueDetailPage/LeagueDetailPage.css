@@ -1,7 +1,9 @@
 .league-detail{
+    margin-top:10px;
     background: white !important ;
     color: black ;
     padding:2%;
+    border-radius: 5px;
 }
 .league-banner{
     content: "";

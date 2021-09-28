@@ -7,17 +7,16 @@ const Home = () => {
   const [leagues, setLeagues] = useState([]);
   useEffect(() => {
     axios(`https://www.thesportsdb.com/api/v1/json/1/all_leagues.php#`).then(
-      (data) => setLeagues(data.data.leagues.slice(0, 15))
+      (data) => setLeagues(data.data.leagues.slice(0, 30))
     );
   }, []);
   return (
     <Container>
       <Row className="justify-content-center">
         <div
-          style={{ height: "150px", textAlign: "center" }}
-          className="text-center text-white "
+          className="text-center mt-2"
         >
-          <h1>Sports Mania</h1>
+          <h1 className=" text-white bg-dark p-2 rounded">Sports Mania</h1>
         </div>
         {leagues.map((league) => (
           <Leagues league={league} key={league.idLeague} />

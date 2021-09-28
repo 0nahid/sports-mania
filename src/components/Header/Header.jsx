@@ -3,7 +3,7 @@ import { Container, Navbar } from "react-bootstrap";
 
 function Header() {
   return (
-    <Navbar expand="lg" variant="light" bg="light">
+    <Navbar expand="lg" variant="light" bg="warning">
       <Container>
         <Navbar.Brand href="/">Sports Mania</Navbar.Brand>
         <Navbar.Toggle />

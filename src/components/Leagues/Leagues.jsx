@@ -18,14 +18,14 @@ const Leagues = (props) => {
     <Col
       md={4}
       style={{ width: "420px" }}
-      className="bg-light p-3  m-2 rounded text-center text-black"
+      className="bg-dark p-3  m-2 rounded text-center text-white"
     >
       <img src={photoUrl} className="img-fluid" alt="" />
       <h4>{strLeague}</h4>
       <h6>{strLeagueAlternate}</h6>
       <p>{strSport}</p>
       <Link to={`/lookupLeague/` + idLeague}>
-        <Button variant="primary">
+        <Button variant="warning">
           Explore <BsArrowRight />
         </Button>
       </Link>
