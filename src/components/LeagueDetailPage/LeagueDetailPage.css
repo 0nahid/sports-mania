@@ -1,19 +1,19 @@
-.league-detail{
-    margin-top:10px;
-    background: white !important ;
-    color: black ;
-    padding:2%;
-    border-radius: 5px;
+.league-detail {
+  margin-top: 10px;
+  background: white !important ;
+  color: black;
+  padding: 2%;
+  border-radius: 5px;
 }
-.league-banner{
-    content: "";
-    background-image: url(../../Photo/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 75%;
-    margin: auto;
+.league-banner {
+  content: "";
+  background-image: url(../../Photo/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75%;
+  margin: auto;
 }
-.league-banner img{
-    opacity:0.5;
+.league-banner img {
+  opacity: 0.5;
 }

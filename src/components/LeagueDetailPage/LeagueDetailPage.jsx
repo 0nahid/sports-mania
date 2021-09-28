@@ -37,7 +37,7 @@ const LeagueDetailPage = (props) => {
         <img className="img-fluid" src={strBanner} alt="" />
       </div>
       <Row className="bg-dark rounded text-white  p-3 mb-3">
-        <Col  md={7}>
+        <Col md={7}>
           <h2>{strLeague}</h2>
           <p>
             <FaMapPin />
